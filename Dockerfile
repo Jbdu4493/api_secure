@@ -1,5 +1,6 @@
 FROM ubuntu:20.04
-RUN apt-get update; apt-get install python3-pip -y;
+RUN apt-get update; apt-get install python3-pip uvicorn -y
+;
 ADD . /sources/
 RUN pip install -r /sources/requirement.txt
 WORKDIR /sources/
