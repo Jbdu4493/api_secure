@@ -22,7 +22,8 @@ users = {
 def verify_password(username, password):
     if username in users and check_password_hash(users.get(username)['password'], password):
         return username
-
+    
+    
 @auth.get_user_roles
 def get_user_roles(user):
     return users.get(user)['role']
