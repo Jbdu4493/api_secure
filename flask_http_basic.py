@@ -2,7 +2,7 @@ from flask import Flask
 from flask_httpauth import HTTPBasicAuth
 from werkzeug.security import generate_password_hash, check_password_hash
 
-api = Flask(import_name='my_api')
+api = Flask(import_name='my_api'  )
 auth = HTTPBasicAuth()
 
 users = {

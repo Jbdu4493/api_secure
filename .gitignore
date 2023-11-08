@@ -1,2 +1,4 @@
 *.pyc
 *.pyc
+.vscode/.DS_Store
+venv_apisecure/*
